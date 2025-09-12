@@ -1,4 +1,5 @@
-Marketing Analytics Predictor & Optimiser - README
+Marketing Analytics Predictor & Optimiser
+
 https://marketing-analytics-predictor.streamlit.app/
 
 # 1. Project Description
