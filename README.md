@@ -1,4 +1,5 @@
 Marketing Analytics Predictor & Optimiser - README
+https://marketing-analytics-predictor.streamlit.app/
 
 # 1. Project Description
 This is a web application designed to predict the total revenue of a marketing campaign based on user-provided parameters. It utilizes a trained XGBoost machine learning model for the core prediction and integrates with the Google Gemini API to generate actionable, data-driven optimization suggestions. The user interface is built with Streamlit.
