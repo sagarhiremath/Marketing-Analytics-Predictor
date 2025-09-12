@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
+google-generativeai
+openpyxl
+streamlit-lottie
+requests
+xgboost
