@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import time
 import google.generativeai as genai
-from backend import predict_campaign_revenue, to_excel # Assuming backend.py exists
+from backend import predict_campaign_revenue, to_excel 
 from streamlit_lottie import st_lottie
 import requests
  
@@ -168,7 +168,7 @@ if submitted:
  
     with st.spinner("🤖 Generating insights..."):
         try:
-            model_gemini = genai.GenerativeModel("gemini-1.5-flash")
+            model_gemini = genai.GenerativeModel("gemini")
             prompt = f"""
 Campaign Data: {pd.Series(user_input).to_string()}
 Predicted Final Revenue: ${predicted_revenue:,.2f}
@@ -195,3 +195,4 @@ Provide:
     excel_data = to_excel(summary_df)
 
     st.download_button("📥 Download Results", excel_data, "campaign_prediction.xlsx")
+
