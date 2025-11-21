@@ -8,7 +8,7 @@ from streamlit_lottie import st_lottie
 import requests
  
 # ---------------- Config ----------------
-API_KEY = "AIzaSyC_u5KHPwKXs_F1VXf2KoC3xyVp9vfsGKw"
+API_KEY = "AIzaSyAHESyI9N-UHedYTQ_wEVtTzd7Qy6AYPJ4"
 genai.configure(api_key=API_KEY)
 st.set_page_config(page_title="Marketing Analytics Predictor", layout="wide", page_icon="📊")
  
@@ -195,6 +195,7 @@ Provide:
     excel_data = to_excel(summary_df)
 
     st.download_button("📥 Download Results", excel_data, "campaign_prediction.xlsx")
+
 
 
 
