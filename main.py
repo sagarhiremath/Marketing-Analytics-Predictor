@@ -8,7 +8,7 @@ from streamlit_lottie import st_lottie
 import requests
  
 # ---------------- Config ----------------
-API_KEY = "AIzaSyDpCdToHWApiHB96rVBjd4lJ4r9z1_lyxA"
+API_KEY = "AIzaSyC_u5KHPwKXs_F1VXf2KoC3xyVp9vfsGKw"
 genai.configure(api_key=API_KEY)
 st.set_page_config(page_title="Marketing Analytics Predictor", layout="wide", page_icon="📊")
  
@@ -168,7 +168,7 @@ if submitted:
  
     with st.spinner("🤖 Generating insights..."):
         try:
-            model_gemini = genai.GenerativeModel("gemini")
+            model_gemini = genai.GenerativeModel("gemini-1.5-pro")
             prompt = f"""
 Campaign Data: {pd.Series(user_input).to_string()}
 Predicted Final Revenue: ${predicted_revenue:,.2f}
@@ -195,4 +195,5 @@ Provide:
     excel_data = to_excel(summary_df)
 
     st.download_button("📥 Download Results", excel_data, "campaign_prediction.xlsx")
+
 
